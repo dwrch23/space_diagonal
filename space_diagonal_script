@@ -1,0 +1,21 @@
+import math
+
+# calculate the space diagonal of a cube
+
+# user input dimensions
+user_input = input("enter l, b, h separated by a comma\n")
+user_input_list = user_input.split(",")
+
+l = int.user_input_list[0]
+b = int.user_input_list[1]
+h = int.user_input_list[2]
+
+def find_space_diagonal(l, b, h):
+    # formula
+    Space_diagonal = math.sqrt(l ** 2 + b ** 2 + h ** 2)
+
+    #display space diagonal
+    print(Space_diagonal)
+
+# function call
+find_space_diagonal(l, b, h)
