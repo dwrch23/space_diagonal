@@ -5,10 +5,11 @@ import math
 # user input dimensions
 user_input = input("enter l, b, h separated by a comma\n")
 user_input_list = user_input.split(",")
+converted_list = [int(s) for s in user_input_list]
 
-l = int.user_input_list[0]
-b = int.user_input_list[1]
-h = int.user_input_list[2]
+l = converted_list[0]
+b = converted_list[1]
+h = converted_list[2]
 
 def find_space_diagonal(l, b, h):
     # formula
